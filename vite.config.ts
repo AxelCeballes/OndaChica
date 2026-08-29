@@ -4,7 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
 const siteConfiguration: FigmaSiteConfiguration = {
-  description: 'Offers a stylish online clothing store for women featuring trendy apparel and easy shopping to enhance your fashion experience.',
+  title: 'Onda Chic — Ropa y Accesorios',
+  description: 'Onda Chic: boutique de ropa y accesorios con actitud, color y la vibra latina que te define. Venta minorista y mayorista.',
+  icons: { icon: '/logo.png' },
+  openGraph: { image: '/logo.png' },
   robots: { index: false },
   accessibility: { addBypassLinks: false },
 }

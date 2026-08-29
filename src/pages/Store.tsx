@@ -116,9 +116,11 @@ export default function Store({
     <div className="min-h-full bg-[#FAF8F2] text-[#111] overflow-x-hidden font-outfit">
       {/* NAV */}
       <nav className="sticky top-0 z-50 bg-[#FAF8F2] border-b-2 border-[#111] flex items-center justify-between px-6 md:px-12 h-16">
-        <div className="font-fraunces font-black text-2xl tracking-tight leading-none">
-          ONDA<br />
-          <span className="text-[#E8143A]">CHICA</span>
+        <div className="flex items-center gap-2">
+          <img src="/logo.png" alt="Onda Chic" className="h-12 w-12 object-contain" />
+          <span className="font-fraunces font-black text-xl tracking-tight leading-none hidden sm:inline">
+            ONDA <span className="text-[#E8143A]">CHIC</span>
+          </span>
         </div>
 
         <ul className="hidden md:flex gap-8 font-outfit font-medium text-sm tracking-widest uppercase">
@@ -423,11 +425,9 @@ export default function Store({
       <footer className="bg-[#111] text-[#FAF8F2] pt-16 pb-8 px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-2">
-            <p className="font-fraunces font-black text-3xl leading-none mb-3">
-              ONDA<br /><span className="text-[#E8143A]">CHICA</span>
-            </p>
+            <img src="/logo.png" alt="Onda Chic" className="h-20 w-20 object-contain mb-3" />
             <p className="font-outfit text-sm text-[#999] leading-relaxed max-w-xs">
-              Boutique de ropa femenina con actitud. Buenos Aires, Argentina.
+              Boutique de ropa y accesorios con actitud. Buenos Aires, Argentina.
             </p>
             <div className="flex gap-4 mt-6">
               {["Instagram", "TikTok", "WhatsApp"].map((s) => (
@@ -455,7 +455,7 @@ export default function Store({
           </div>
         </div>
         <div className="border-t border-[#333] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-outfit text-xs text-[#666]">© 2026 Onda Chica. Todos los derechos reservados.</p>
+          <p className="font-outfit text-xs text-[#666]">© 2026 Onda Chic. Todos los derechos reservados.</p>
           <ZigZag className="w-20" color="#E8143A" />
         </div>
       </footer>

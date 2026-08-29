@@ -39,14 +39,16 @@ export default function AdminLayout({
         className={`fixed md:static inset-y-0 left-0 z-30 w-60 bg-[#111] border-r border-[#222] flex flex-col transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
       >
         {/* Logo */}
-        <div className="px-6 py-6 border-b border-[#222]">
-          <p className="font-fraunces font-black text-2xl leading-none">
-            ONDA<br />
-            <span className="text-[#E8143A]">CHICA</span>
-          </p>
-          <p className="font-outfit text-[10px] uppercase tracking-[0.2em] text-[#555] mt-1">
-            Panel Admin
-          </p>
+        <div className="px-6 py-6 border-b border-[#222] flex items-center gap-3">
+          <img src="/logo.png" alt="Onda Chic" className="h-11 w-11 object-contain" />
+          <div>
+            <p className="font-fraunces font-black text-xl leading-none">
+              ONDA <span className="text-[#E8143A]">CHIC</span>
+            </p>
+            <p className="font-outfit text-[10px] uppercase tracking-[0.2em] text-[#555] mt-1">
+              Panel Admin
+            </p>
+          </div>
         </div>
 
         {/* Nav */}

@@ -30,9 +30,9 @@ export default function AdminLogin({
       <div className="relative z-10 w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-10">
-          <p className="font-fraunces font-black text-5xl leading-none text-[#FAF8F2]">
-            ONDA<br />
-            <span className="text-[#E8143A]">CHICA</span>
+          <img src="/logo.png" alt="Onda Chic" className="h-28 w-28 object-contain mx-auto mb-3" />
+          <p className="font-fraunces font-black text-3xl leading-none text-[#FAF8F2]">
+            ONDA <span className="text-[#E8143A]">CHIC</span>
           </p>
           <p className="font-outfit text-xs uppercase tracking-[0.3em] text-[#FFD600] mt-3">
             Panel de Administración
